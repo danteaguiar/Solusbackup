@@ -478,6 +478,8 @@ exec clipit
 #Power
 exec mate-power-manager
 
+#Bluetoth
+exec --no-startup-id blueman-applet
 
 # USER APPLICATIONS
 
@@ -990,7 +992,7 @@ bindsym control+mod1+n exec gnome-control-center
 #file managers
 
 #exec nemo --no-desktop
-exec nautilus --no-desktop
+#exec nautilus --no-desktop
 #exec insync -start
 #exec caja
 #exec thunar
@@ -1002,7 +1004,7 @@ for_window [class="Caja"] focus
 for_window [class="Thunar"] focus
 
 #bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
-bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
+#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
 #bindsym $mod+Shift+Return exec caja; workspace 8;focus
 #bindsym $mod+Shift+Return exec thunar; workspace 8;focus
 
@@ -1042,6 +1044,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #sudo systemctl enable rfkill-unblock@all
 #exec --no-startup-id blueman-applet
 exec --no-startup-id redshift-gtk
+exec --no-startup-id xkeyboard-config
 
 # network
 #antergos/linux mint
